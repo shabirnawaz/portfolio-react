@@ -1,0 +1,432 @@
+:root {
+  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #032e41;
+  color: #fff;
+}
+
+.navbar {
+  /* background-color: #20d7f2; */
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 30px;
+  align-items: center;
+}
+.nav-bg {
+  /* background-color: #20d7f2; */
+  background-color: transparent;
+  border-bottom: 2px solid #0f4c5c;
+  color: #ffffff;
+}
+
+.menu ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  text-decoration: none;
+}
+p {
+  font-size: 20px !important;
+  line-height: 1.8;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+  color: #007bff;
+}
+
+/* Active NavLink */
+.menu ul li a.active {
+  color: #007bff;
+
+  padding-bottom: 3px;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff; /* white text */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.logo a:hover {
+  color: #007bff; /* hover color */
+}
+
+.main-container {
+  padding: 5px 30px;
+}
+
+.main-headind {
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
+.social-icons {
+  display: flex;
+  /* justify-content: center;  */
+  gap: 20px;
+  align-items: center;
+}
+
+.social-icon {
+  font-size: 22px;
+  color: #20d7f2;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #007bff;
+}
+
+.section-text {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.about-section {
+  font-size: 18px;
+  line-height: 1.8;
+}
+/*  my skill  css  */
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 40px 0px;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.skill-card {
+  background: linear-gradient(135deg, #021e33, #04344c);
+  color: white;
+  padding: 30px 25px;
+  width: 320px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(32, 215, 242, 0.4);
+  text-align: left;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: slideUp 1s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(32, 215, 242, 0.05);
+  transform: skewY(-10deg);
+  animation: shine 3s infinite;
+}
+
+.skill-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 0 25px #20d7f2;
+}
+
+.skill-card h3 {
+  margin-bottom: 12px;
+  color: #20d7f2;
+  font-size: 1.4rem;
+}
+
+.skill-card p {
+  font-size: 0.95rem;
+  color: #dddddd;
+  line-height: 1.5;
+}
+
+.skill-cards {
+  background: linear-gradient(135deg, #021e33, #04344c);
+  color: white;
+  padding: 30px 21px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(32, 215, 242, 0.4);
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: slideUp 1s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-cards:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 0 25px #20d7f2;
+}
+
+/* Hi, Everyone */
+.main-heading.greeting {
+  color: #20d7f2;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* Name */
+.main-heading.name {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Typed role text */
+.role .typed {
+  color: #20d7f2;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-bottom: 2px solid rgba(0, 123, 255, 0.3);
+  padding-bottom: 2px;
+}
+.btn-bg {
+  background-color: #032e41 !important;
+  color: #fff;
+}
+/* skill */
+.skills-container {
+  background-color: #0d92cb;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+  color: #fff;
+}
+
+.skills-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #007bff;
+}
+
+.skill {
+  margin-bottom: 18px;
+}
+
+.skill span {
+  display: block;
+
+  font-weight: 500;
+}
+
+.progress-bar {
+  background: #d6d6d6;
+  border-radius: 6px;
+  overflow: hidden;
+  height: 30px;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  line-height: 22px;
+  color: #fff;
+  text-align: right;
+  padding-right: 8px;
+  font-size: 0.99rem;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: width 1s ease-in-out;
+}
+
+/* Individual skill colors + widths */
+.progress.html {
+  width: 90%;
+  background: #e44d26; /* HTML orange */
+}
+
+.progress.css {
+  width: 85%;
+  background: #264de4; /* CSS blue */
+}
+
+.progress.html {
+  background: #e44d26; /* HTML orange */
+  color: #fff;
+  width: 0;
+  animation: htmlFill 4s forwards;
+}
+
+.progress.css {
+  background: #264de4; /* CSS blue */
+  color: #fff;
+  width: 0;
+  animation: cssFill 4s forwards;
+}
+
+.progress.bootstrap {
+  background: #563d7c; /* Bootstrap purple */
+  color: #fff;
+  width: 0;
+  animation: bootstrapFill 4s forwards;
+}
+
+.progress.tailwind {
+  background: #38bdf8; /* Tailwind cyan */
+  color: #032e41;
+  width: 0;
+  animation: tailwindFill 4s forwards;
+}
+
+.progress.js {
+  background: #f0db4f; /* JS yellow */
+  color: #032e41;
+  width: 0;
+  animation: jsFill 4s forwards;
+}
+
+.progress.react {
+  background: #61dafb; /* React cyan */
+  color: #032e41;
+  width: 0;
+  animation: reactFill 4s forwards;
+}
+
+/* Keyframes for each skill */
+@keyframes htmlFill {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes cssFill {
+  from {
+    width: 0;
+  }
+  to {
+    width: 85%;
+  }
+}
+
+@keyframes bootstrapFill {
+  from {
+    width: 0;
+  }
+  to {
+    width: 78%;
+  }
+}
+
+@keyframes tailwindFill {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes jsFill {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes reactFill {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-size: 20px;
+  color: #fff !important;
+  padding: 15px 30px;
+}
+
+footer {
+  background-color: #148bbe; /* body background color ke saath match */
+  font-size: 18px;
+}
+
+.contact-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.animated-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  animation: fadeInMove 1.9s ease-in-out forwards;
+}
+
+@keyframes fadeInMove {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn-bg {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+}
+
+.btn-bg:hover {
+  background-color: #45a049;
+  color: white;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; /* optional: image crop ke liye */
+}
+
+.my-pic:hover {
+  /* box-shadow: 0 0 25px #20d7f2; */
+  box-shadow: 6px 5px 54px #20d7f2;
+}
+
+.heading-span {
+  color: #20d7f2;
+}
+
+.about-pic {
+  width: 65%;
+}
+
+@media (max-width: 676px) {
+  .mobile-width {
+    width: 100%;
+  }
+  .about-pic {
+    display: none;
+  }
+}
